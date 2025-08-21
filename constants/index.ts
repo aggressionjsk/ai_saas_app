@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     label: "Home",
-    route: "/",
+    route: "/dashboard",
     icon: "/assets/icons/home.svg",
   },
   {
@@ -29,6 +29,12 @@ export const navLinks = [
     route: "/transformations/add/removeBackground",
     icon: "/assets/icons/camera.svg",
   },
+  {
+    label: "AI Generate",
+    route: "/generate",
+    icon: "/assets/icons/stars.svg",
+  },
+  // Account section
   {
     label: "Profile",
     route: "/profile",

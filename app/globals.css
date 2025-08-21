@@ -98,6 +98,18 @@
     @apply bg-purple-gradient bg-cover bg-clip-text text-transparent;
   }
 
+  /* Zukku animated wordmark */
+  .zukku-logo {
+    @apply font-bold tracking-wide text-transparent bg-clip-text bg-purple-gradient bg-cover;
+    background-size: 200% 200%;
+    animation: zukku-sheen 4s linear infinite;
+  }
+
+  @keyframes zukku-sheen {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
   /* ===== ALIGNMENTS */
   .flex-center {
     @apply flex justify-center items-center;
@@ -312,7 +324,7 @@
 
   /* Sidebar Component */
   .sidebar {
-    @apply hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex;
+    @apply hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex overflow-y-auto;
   }
 
   .sidebar-logo {
@@ -320,7 +332,7 @@
   }
 
   .sidebar-nav {
-    @apply h-full flex-col justify-between md:flex md:gap-4;
+    @apply flex flex-col gap-4 min-h-0;
   }
 
   .sidebar-nav_elements {
